@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Music for Everyone</title>
+    <style>
+      /* Add your custom styles here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #1db954;
+        padding: 15px;
+        color: white;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Spotify - Music for Everyone</h1>
+    </header>
+    <div class="container">
+      <h2>Welcome to Spotify!</h2>
+      <p>Listen to your favorite music anytime, anywhere.</p>
+    </div>
+
+    <script>
+      // Function to redirect to the mobile app
+      function redirectToMobileApp() {
+        // Replace 'myapp://' with your actual deep link URL for the specific screen in your app
+        var deepLinkUrl = "https://spotifyclonechinmay.page.link/chinmay";
+
+        // Try to open the app using the deep link URL
+        window.location.href = deepLinkUrl;
+
+        // If the app is not installed, the above code will not work.
+        // Optionally, you can redirect the user to the app store or a specific webpage.
+        // For example:
+        // var appStoreUrl = 'https://example.com/app-store-url';
+        // window.location.href = appStoreUrl;
+      }
+
+      // Automatically redirect to the mobile app when the page loads
+
+      window.onload = function () {
+        redirectToMobileApp();
+      };
+    </script>
+  </body>
+</html>
